@@ -6,9 +6,9 @@ program.option("-n, --nombre <nombre>", "Tu nombre");
 program.parse(process.argv);
 const options = program.opts();
 if (
-  options.nombre !== undefined &&
-  options.nombre !== "" &&
-  options.n !== undefined &&
+  options.nombre !== undefined ||
+  options.nombre !== "" ||
+  options.n !== undefined ||
   options.n !== ""
 ) {
   console.log("Mira el archivo saludo.txt");
